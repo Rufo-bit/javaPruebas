@@ -1,0 +1,19 @@
+Java
+
+String
+
+-No es un tipo primitivo
+
+-Métodos:
+
+lenght(); devuelve la longitud de una cadena de caracteres
+
+charAt(n); Devuelve la posición de un caracter dentro de una cadena
+
+substring(x,y); devuelve una subcadena dentro de la cadena,siendo x el caracter a partir del cual se extrae y Y el n° de caracteres que se quieren extraer
+
+equals(cadena); devuelve true si dos cadena que se comparan son iguales y false si no lo son. Distingue minusculas y mayusculas
+
+
+equalsIgnoreCase(cadena); no distingue mayusculas y minusculas
+
