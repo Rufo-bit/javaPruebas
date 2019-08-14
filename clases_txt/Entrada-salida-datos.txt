@@ -1,0 +1,18 @@
+IGU--->Interfaz gráfica de usuario
+
+clase scanner
+
+sus métodos utlizados son
+
+nextLine()
+nextInt()
+nextDouble()
+
+clase JOptionPane
+
+metodo
+
+showInputDialog() ----->es estático
+
+
+*Constructor: método especial

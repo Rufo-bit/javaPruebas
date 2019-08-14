@@ -1,0 +1,31 @@
+Java tiene 2 tipos de clases:
+
+-Predefinidas: Tales como la API de Java
+-Propias: Como las que crea el programador
+
+-------------------------------------------------
+
+Cada paquete (carpeta) en Java tiene sus clases
+
+-Java
+	-Java.awt
+	-java.util
+		-Java.util.regex
+	-java.io
+
+
+-Javax
+	-javax.activity
+	-javax.annotation
+--------------------------------------------------
+
+Si se utliza otro paquete diferente a java.lang, se debe de utlizarla
+siguiente estrcutura
+
+import java.util.*;  -----> Tiene más peso en memoria
+
+el * indica que jalara todas las clases de ese paquete
+
+Al contrario si solo utilizamos un clase la indicamos, por ejemplo:
+
+import java.util.Scanner; ------> Tiene menos peso en memoria
