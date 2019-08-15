@@ -1,0 +1,21 @@
+Entrada y salidad e datos II
+
+import javax.swing.*;
+
+
+String X = JOptioDialog.showInputDialog("");
+lO QUE HACE ESTA LINEA ES GQUE GUARDA Y DEVUELVE STRING
+
+parseInt(edad)
+LO QUE HACE UN TIPO DE DATO ENTERO, ES ESTATICO, TE PIDO UN TIPO DE DATO STRING
+
+Formatear números(Redondear numeros)
+
+clase NumberFormat
+
+double x=10000.9;
+
+System.out.printf("%1.2f", x/3);
+
+la f es de formato
+el 2 es cuantos decimales tendra
