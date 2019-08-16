@@ -1,0 +1,25 @@
+Flujo de ejecución: Indica de que manera se ejecutara el código, es decir
+se saltara líneas ascedente o descendete, o salteado
+
+Tipos de condicionales en java
+
+Condicional if
+if(condicion)
+{
+código;
+}
+
+Condicional switch
+
+Switch(Valor a evaluar)
+{
+Case valor1;
+Código;
+Break;
+Case valor2;
+Código;
+Break;
+}
+
+
+}
