@@ -1,0 +1,12 @@
+Bucles
+Bucles indeterminados
+While (condicion)
+{
+linea 1
+linea n
+}
+
+Do-while
+Bucles determinados
+for
+for-each
