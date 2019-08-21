@@ -4,7 +4,7 @@ package primerprograma;
 import javax.swing.*;
 public class bucles_uno 
 {
-    public static void main(String[]cargs)
+    public static void main(String[]args)
     {
         
         String clave="Rufino";
