@@ -9,6 +9,7 @@ public static void main (String[] args)
 {
     
     Scanner entrada = new Scanner (System.in);
+    Scanner opcion = new Scanner (System.in);
     String clave ="admin123";
     String contra = " ";
     
@@ -24,7 +25,14 @@ public static void main (String[] args)
                 
             }
     System.out.println("Contraseña correcta: ");
-    System.out.println("Bienvenido a la calculadora: Que deseas hacer? ");
+    System.out.println("Bienvenido a la calculadora: Que deseas hacer? 1-Operaciones \n 2-areas ");
+    int opciones = opcion.nextInt();
+    
+    if(opciones == 1)
+    {
+        
+    
+    
     
     System.out.println("1- Suma \n 2- Resta \n 3- Multiplicación");
     int operacion = entrada.nextInt();
@@ -56,7 +64,12 @@ public static void main (String[] args)
             
             
     }
-  
+
+    }
+    else
+    {
+            System.out.println("Se esta dando mantenimiento, Esperalo pronto. :) ");
+            }  
    
     
 }
