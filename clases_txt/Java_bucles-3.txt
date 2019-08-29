@@ -1,0 +1,8 @@
+Bucle for
+
+	for(inicio bucle, condición, contador bucle)
+		{
+			linea1
+			linea2
+			linean...
+		}
