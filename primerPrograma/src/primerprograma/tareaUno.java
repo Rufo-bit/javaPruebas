@@ -16,6 +16,8 @@ public static void main (String [] args)
     System.out.println("Introduce un número por favor:");
     int numero = entrada.nextInt();
     
+
+    
     if (numero >=0 && numero<=20)
     {
     while( i< numero)
@@ -36,22 +38,27 @@ public static void main (String [] args)
         {
            
             k++;
-            System.out.print("*");
-                        
-                  
+            System.out.print("-");
 
-                while(l<(numero-2))
+            l=0;
+               while(l<(numero-2)) 
             {
-              l++;
-                
+              
+                l++;
                 System.out.print(" ");
-            }    
-            
-            System.out.println("*");  
-            
-            
+              
+            }              
+           
+               
+               /*for(l=0;l<numero-2;l++)
+               {
+                   System.out.print(" ");
+               }
+            */
+       System.out.println("+");         
         }
-     
+       
+   
 
       
     
