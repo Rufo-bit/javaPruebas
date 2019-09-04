@@ -1,0 +1,8 @@
+Matrices(Arrays, arreglos)
+	-Es una estructura de datos que contiene una colección de valores del mismo tipo.
+	-Sirve para almacenar valores que normalmente tienen alguna relación entre si
+
+Sintaxis:
+	Declaración: int[] mi_matriz = new int [10];
+
+	Iniciar y declarar: int[] mi_matriz = {15, 25, 8, -7, 92};
