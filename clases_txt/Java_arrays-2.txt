@@ -1,0 +1,20 @@
+For each (Por cada)
+
+-For especial para matrices
+   for ( TipoARecorrer nombreVariableTemporal : nombreDeLaColección ) {
+
+                                               Instrucciones
+
+       }
+//Ejemplo aprenderaprogramar.com
+
+public void listarTodosLosNombres () {
+
+        for (String i: listaDeNombres) {
+
+        System.out.println (i); //Muestra cada uno de los nombres dentro de listaDeNombres
+
+    }
+
+  }
+ 
