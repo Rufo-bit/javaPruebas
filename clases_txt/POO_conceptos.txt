@@ -1,0 +1,21 @@
+POO
+	-Se usan los objetos de nuestro entorno de la vida real
+	-Java esta orientado 100% a objetos
+	-Se reutiliza código
+
+Términos:
+	-Clase: Módelo donde se redactan las características comunes de un 		grupo de objetos. Es la base o plantilla que se utilizara para instanciar a otras clases
+
+	-Objeto: Pertenencen a una clase, tienen propiedades(atributos), tienen 		comportamientos
+		Ejemplo:
+			Carro.color="rojo"; -->Propiedad
+			Carro.arranca(); -->Comportamiento(métodos)
+	-método constructor: Método especial que se encarga de dar un estado 			inicial al objeto
+			
+
+	-Ejemplar de clase, Instanciar:
+	-Modelarización:
+	-Encapsulamiento:
+	-Herencia
+	-Polimorfismo
+
