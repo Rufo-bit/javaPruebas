@@ -14,8 +14,27 @@ Términos:
 			
 
 	-Ejemplar de clase, Instanciar:
+		Ejemplo:
+			Coche Renault = new Coche();
+	*** el new llama al constructor de la clase, es decir el flujo del programa se ira a buscar el contrsutor Coche 
 	-Modelarización:
+			Son las clases que forman juntos el programa
+
+***El programa siempre empezara con la clase que contenga el método 		main
+
 	-Encapsulamiento:
+		Las clases se conectan mediante métodos
+		Modificadores de acceso: private,etc.
+			Sirven para que solo desde la clase donde se declaro se 			pueda modificar solamente ahí y no en otra clase
+
+		***métodos:Con esto podemos acceder a los modificacores de 			acceso	
+
 	-Herencia
 	-Polimorfismo
+
+
+-----------------------------------------------------------------------
+
+Clase principal es la clase pública, es la que da nombre al fichero de la clase,las demás clases no pueden ser públicas
+	
 
