@@ -11,9 +11,12 @@ public class Uso_coche
                                     // Aqí vemos que el new indica que llamara al método constructor, es decir
                                     //el flujo del programa ira a buscar a Coche.java y se ira donde se les asigna
                                     //valor a las variables de la clase coche
-                                    
         
-        System.out.println("Este coche tiene" + Renault.ruedas + "ruedas");
+                                    
+        Renault.establece_color();
+        System.out.println(Renault.dime_largo());
+        System.out.println(Renault.dime_color());
+       // System.out.println("Este coche tiene" + Renault.ruedas + "ruedas");
         {
             
         }

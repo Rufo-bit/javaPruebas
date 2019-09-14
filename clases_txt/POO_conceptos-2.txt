@@ -1,0 +1,16 @@
+Encapsulamiento
+2 TIPOS DE METODOS DE ACCESO:
+-métodos GETTERS-SETTERS
+	-SETTERS O DEFINIDORES:ESTABLECEN, SE MODIFICA VALOR DE PROPIEDADES DE 			OBJETOS
+		SINTAXIS: public void nombre_método(){código}
+	
+
+	No lleva return, por que no devolvera ninguna valor
+	**VOID:Indica que el método no devuelve ningún valor
+	
+	-GETTERS O CAPTADORES:PROPORCIONAR, SE ONTIENE VALOR
+		sINTAXIS: public dato_a_devolver nombre_método(){codigo +				 return}
+	Lleva return por que debe devolver el dato
+
+	**return=devuelve
+		
