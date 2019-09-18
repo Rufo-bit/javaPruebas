@@ -13,9 +13,9 @@ public class Uso_coche
                                     //valor a las variables de la clase coche
         
                                     
-        Renault.establece_color();
-        System.out.println(Renault.dime_largo());
-        System.out.println(Renault.dime_color());
+        //Renault.establece_color();
+        //System.out.println(Renault.dime_largo());
+        //System.out.println(Renault.dime_color());
        // System.out.println("Este coche tiene" + Renault.ruedas + "ruedas");
         {
             

@@ -1,0 +1,7 @@
+Paso de parametros
+
+-van dentro de los parentesis del método
+
+----------------------------------------------
+Operador this
+-Se ocupa cuando el argumento y la variable son parecidos, sirve para hacer referencia a la propia clase.
