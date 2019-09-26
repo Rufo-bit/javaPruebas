@@ -1,0 +1,4 @@
+Herencia
+
+-Construyes una clase que hereda de otra
+-Hereda todas las propiedades y métodos de la clase padre
