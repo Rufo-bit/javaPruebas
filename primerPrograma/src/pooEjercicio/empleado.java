@@ -7,30 +7,41 @@ public class empleado
 {
 public static void main (String[] args)
 {
-    String nombre;
-    int edad;
-    double sueldo;
-    int agno;
-    int mes;
-    int dia;
-    
+ 
     clase_empleado[] empleadosLibreria = new clase_empleado [4];
     
     for (int i = 0; i<3; i++)
     {
-        nombre=JOptionPane.showInputDialog("Ingresa nombre: ");
-        edad=Integer.parseInt(JOptionPane.showInputDialog("Ingresa edad: "));
-        sueldo=Double.parseDouble(JOptionPane.showInputDialog("Ingresa tu sueldo: "));
-        agno = Integer.parseInt(JOptionPane.showInputDialog("Ingresa año de alta"));
-        mes = Integer.parseInt(JOptionPane.showInputDialog("Ingresa mes de alta"));
-        dia = Integer.parseInt(JOptionPane.showInputDialog("Ingresa día de alta"));
+        JOptionPane.showInputDialog("Ingresa nombre: ");
+        Integer.parseInt(JOptionPane.showInputDialog("Ingresa edad: "));
+        Double.parseDouble(JOptionPane.showInputDialog("Ingresa tu sueldo: "));
+        Integer.parseInt(JOptionPane.showInputDialog("Ingresa año de alta"));
+        Integer.parseInt(JOptionPane.showInputDialog("Ingresa mes de alta"));
+        Integer.parseInt(JOptionPane.showInputDialog("Ingresa día de alta"));
     
         
-        for(int j = 0; j<4; i++)
+        for(int j = 0; j<3; i++)
         {
            empleadosLibreria[j] = new clase_empleado(nombre, edad, sueldo, agno, mes, dia); 
         }
+   
+        /*for(clase_empleado z:empleadosLibreria)
+        {
+       System.out.println(nombre + edad +  sueldo + agno + mes + dia);
+        }
+    */
+        for (int k=0;k<3;k++)
+        {
+            System.out.println("Nombre: " + empleadosLibreria[k].dameNombre() + " edad: " + 
+                    empleadosLibreria[k].dameEdad() +   " Sueldo: "  + 
+                    empleadosLibreria[k].dameSueldo() + " Fecha alta: " + empleadosLibreria[k].dameAlta());
+        }
+    
+    
+    
     }
+    
+    
    
    
     
@@ -80,6 +91,8 @@ public static void main (String[] args)
             }
             
             //SETTER
+            
+            
             
             public void subeSueldo(double porcentaje)
             {
