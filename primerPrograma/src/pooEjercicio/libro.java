@@ -1,4 +1,3 @@
-
 package pooEjercicio;
 
 
@@ -12,7 +11,7 @@ private  double peso;
 private double peso_total;
 private double peso_hojas;
 
-
+//se meodifica
 public Libro()
 {
     peso = 0;
