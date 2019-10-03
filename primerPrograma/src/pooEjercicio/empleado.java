@@ -17,10 +17,13 @@ public static void main (String[] args)
     int agno;
     int mes;
     int dia;
-    clase_empleado[] empleadosLibreria = new clase_empleado [4];
+    int numEm;
+    
+    numEm = Integer.parseInt(JOptionPane.showInputDialog("Cuantos empleados ingresaras: "));
+    clase_empleado[] empleadosLibreria = new clase_empleado [numEm];
    
     
-    for (int i = 0; i<3; i++)
+    for (int i = 0; i<numEm; i++)
     {
        // empleados.dameNombre(JOptionPane.showInputDialog("Ingresa nombre: "));
   
@@ -45,7 +48,7 @@ public static void main (String[] args)
         }
     */
     }
-        for (int k=0;k<3;k++)
+        for (int k=0;k<numEm;k++)
         {
             System.out.println("Nombre: " + empleadosLibreria[k].dameNombre() + " edad: " + 
                     empleadosLibreria[k].dameEdad() +   " Sueldo: "  + 
