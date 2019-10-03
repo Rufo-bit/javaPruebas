@@ -3,52 +3,59 @@ package pooEjercicio;
 
 import java.util.*;
 import javax.swing.*;
+
+
 public class empleado 
 {
 public static void main (String[] args)
 {
- 
+    
+   // clase_empleado empleados = new clase_empleado();
+    String nombre;
+    int edad;
+    double sueldo;
+    int agno;
+    int mes;
+    int dia;
     clase_empleado[] empleadosLibreria = new clase_empleado [4];
+   
     
     for (int i = 0; i<3; i++)
     {
-        JOptionPane.showInputDialog("Ingresa nombre: ");
-        Integer.parseInt(JOptionPane.showInputDialog("Ingresa edad: "));
-        Double.parseDouble(JOptionPane.showInputDialog("Ingresa tu sueldo: "));
-        Integer.parseInt(JOptionPane.showInputDialog("Ingresa año de alta"));
-        Integer.parseInt(JOptionPane.showInputDialog("Ingresa mes de alta"));
-        Integer.parseInt(JOptionPane.showInputDialog("Ingresa día de alta"));
-    
+       // empleados.dameNombre(JOptionPane.showInputDialog("Ingresa nombre: "));
+  
+        nombre =  JOptionPane.showInputDialog("ingresa nombre: ");
+        edad = Integer.parseInt(JOptionPane.showInputDialog("Ingresa edad: "));
+        sueldo = Double.parseDouble(JOptionPane.showInputDialog("Ingresa tu sueldo: "));
+        agno=Integer.parseInt(JOptionPane.showInputDialog("Ingresa año de alta"));
+        mes=Integer.parseInt(JOptionPane.showInputDialog("Ingresa mes de alta"));
+        dia=Integer.parseInt(JOptionPane.showInputDialog("Ingresa día de alta"));
         
-        for(int j = 0; j<3; i++)
+        
+        empleadosLibreria[i] = new clase_empleado(nombre, edad, sueldo, agno, mes, dia); 
+        
+        /*for(int j = 0; j<3; i++)
         {
            empleadosLibreria[j] = new clase_empleado(nombre, edad, sueldo, agno, mes, dia); 
-        }
+        }*/
    
         /*for(clase_empleado z:empleadosLibreria)
         {
        System.out.println(nombre + edad +  sueldo + agno + mes + dia);
         }
     */
+    }
         for (int k=0;k<3;k++)
         {
             System.out.println("Nombre: " + empleadosLibreria[k].dameNombre() + " edad: " + 
                     empleadosLibreria[k].dameEdad() +   " Sueldo: "  + 
                     empleadosLibreria[k].dameSueldo() + " Fecha alta: " + empleadosLibreria[k].dameAlta());
         }
+  
     
-    
-    
-    }
-    
-    
-   
-   
     
 }
 }
-
-
 
         class clase_empleado
         {
@@ -57,7 +64,7 @@ public static void main (String[] args)
             private Date altaContrato;
             private int edad;
             
-            public clase_empleado(String nom, int eda, double sue, int agno, int mes, int dia)
+            public clase_empleado( String nom, int eda, double sue, int agno, int mes, int dia)
             {
               nombre = nom;
               edad=eda;
@@ -68,7 +75,11 @@ public static void main (String[] args)
               altaContrato = calendario.getTime();
 
             }
-
+            //SETTER
+           /* public void estableceNombre(String dameNombre)
+            {
+                nombre = dameNombre;
+            }*/
             //GETTER
             public String dameNombre()
             {
