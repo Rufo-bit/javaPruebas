@@ -1,0 +1,17 @@
+POO
+
+Variables estáticas
+
+-Implica que los objetos no tengan copia de una variable, solo se permite compartirla, esto es para el tema
+en caso de que se repitan datos que deben tener un orden.
+
+Por ejemplo:
+
+
+static id
+persona 1
+id -->Solo comparten el id
+
+
+persona 2
+id

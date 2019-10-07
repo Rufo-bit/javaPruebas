@@ -1,7 +1,7 @@
 package pooEjercicio;
 
 
-public class Libro 
+public class libro 
 {
 private double hojas;
 private boolean pasta_dura;
@@ -12,7 +12,7 @@ private double peso_total;
 private double peso_hojas;
 
 //se meodifica
-public Libro()
+public libro()
 {
     peso = 0;
 }
