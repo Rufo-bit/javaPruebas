@@ -3,7 +3,12 @@ package poo;
 
 public class constantes 
 {
-public static void main(String[] args)
+public static void main(String[] args) //Todo programa Java tiene clase principal y comienza con el método main
+                                        //el void y main es que no devuelve ningun dato
+                                           //el public es para que se pueda acceder fuera de la clase
+                                           //stetic es que no actua sobre ningun objeto, el método main se encarga de construir su
+                                           //propios objetos
+                                           //El main recibe parametros String y un array
 {
     Empleados empleadoUno = new Empleados("Paco");
     Empleados empleadoDos = new Empleados("Ana");
@@ -19,6 +24,8 @@ public static void main(String[] args)
  
     
     System.out.println(empleadosTres.devuelveDato());
+    
+    System.out.println(Empleados.dameIdSiguiente());
     
 }
 }
@@ -42,6 +49,11 @@ class Empleados
                         //Aparte garantiza que no se podra modificar el valor en otros objetos
         
         IdSiguiente++;//incrementador
+    }
+    
+    public static String dameIdSiguiente()//método estatico, propia de la clase
+    {
+        return "El ID siguiente es: " + IdSiguiente;//La variable IdSiguiente no tiene problemas con el método por que son estaticos
     }
     
     public void cambioSeccion(String seccion)

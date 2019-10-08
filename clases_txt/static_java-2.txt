@@ -1,0 +1,7 @@
+Métodos STATIC
+
+-El método solo se utilizara en la clase, no en un objeto
+
+-Para llamarlas es nombreDeClase.metodo
+
+-No acceden a campos de ejemplar(variables/constantes declaradas en clase), a menos que estas tambien sean static
