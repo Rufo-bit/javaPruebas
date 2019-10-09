@@ -1,0 +1,5 @@
+ //Sobrecarga de constructores
+    //Es cuando quieres utilizar varios constructores dentro de una misma clase
+    //deben tener direntes tipos de argumentos para no generar confusion en el compilador
+
+La sobrecarga de métodos es el mismo caso
