@@ -1,0 +1,14 @@
+Se podría denominar como reutilización de código
+
+public class furgoneta /*subclase*/extends Coche //superclase
+{
+    
+}
+
+
+//Método constructor
+
+    public furgoneta(int lugares_extra, int capacidad_carga)
+    {
+        super();//la instrucción super llama al construcotr de la clase padre para darle un estado inicial
+    }
