@@ -1,0 +1,6 @@
+Diseño de la herencia. Regla
+
+-Preguntarse si la subclase es una superclase
+-Crear un clase principal, por ejemplo
+
+Vehículo (motor, color) (Superclase)--->Coche, Furgoneta, Camión, Moto (Subclase)

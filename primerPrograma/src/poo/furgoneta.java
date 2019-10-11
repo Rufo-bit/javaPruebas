@@ -17,4 +17,14 @@ public class furgoneta /*subclase*/extends Coche //superclase
         
         this.lugares_extra=lugares_extra;
     }
+    
+    //GETTER
+    
+    public String DimeDatosFurgoneta()
+    {
+        return "La capacidad de carga es: " + capacidad_carga + 
+                " Y tiene: " + lugares_extra + " lugares.";
+    }
+    
+    
 }
