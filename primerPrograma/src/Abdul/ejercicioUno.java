@@ -10,13 +10,22 @@ package Abdul;
 public class ejercicioUno 
 {
     public static void main (String [] args)
-    {
-      
-        System.out.println("Cuantos numeros ingresaras: ");
+    {  
+        
+        int[] numeros= {1,2,3,4,5};
+        
+        int[] numerosInvertidos=new int[numeros.length];
+        
+        
+        for(int i=(numeros.length-1),j=0;i>=0;i--,j++)
+        {
+           numerosInvertidos[j]=numeros[i];
+           
+           System.out.print(numerosInvertidos[j]);
+        }
         
         
         
-        
-        int numeros [] = new int [n];
+
     }
 }
