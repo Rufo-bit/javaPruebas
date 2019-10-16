@@ -50,9 +50,27 @@ public class ejercicioDos
                 array[i] = array[min];
                 array[min] = aux;
             }
+            
+        }
+          
+          for(int ascendente : array)
+        {
+            System.out.println("array Uno numero: " + ascendente);
         }
          /*Termina orden ascendente*/
          
+         /*Empieza orden descendiente*/
+         
+         for(int i=0; i<array.length -1;i++)
+         {
+             int max = i;
+         }
+         
+            for(int j= 0; j<array.length -1;j++)
+            {
+                
+            }
+         /*Temina orden descendiente*/
             
        
     }
