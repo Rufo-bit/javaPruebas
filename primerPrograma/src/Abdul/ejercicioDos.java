@@ -26,9 +26,9 @@ public class ejercicioDos
      
          }
          
-         for(int ascendente : array)
+         for(int random : array)
         {
-            System.out.println("array Uno numero: " + ascendente);
+            System.out.println("array Uno numero: " + random);
         }
          
          /*Termina orden normal*/
@@ -64,14 +64,28 @@ public class ejercicioDos
          for(int i=0; i<array.length -1;i++)
          {
              int max = i;
-         }
+         
          
             for(int j= 0; j<array.length -1;j++)
             {
-                
+                if(array[j] > array[i])
+                {
+                    max = j; 
+                }
             }
          /*Temina orden descendiente*/
-            
-       
+          if(i != max)
+          {
+              int aux = array[i];
+                array[i] = array[max];
+                array[max] = aux;
+          }
+         }
+         
+         for(int descendente : array)
+        {
+            System.out.println("array Uno numero: " + descendente);
+        }
+         
     }
 }
