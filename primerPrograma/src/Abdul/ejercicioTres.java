@@ -11,17 +11,18 @@ public class ejercicioTres
     public static void main (String[] args)
     {
         Scanner entradaDatos = new Scanner(System.in);
+              
+            System.out.println("Introduce tu nombre");
+       
+        String nombre =entradaDatos.nextLine();
         
-        System.out.println("Introduce tu nombre");
-        String nombre = entradaDatos.nextLine();
-        
-        String array []= new String[nombre];
-        
-       // System.out.println("Tu nombre tiene: " + nombre.length() + "caracteres");
-        
-        for(int i=0; i<nombre.length() ; i++)
+        char invertir [] = nombre.toCharArray(); //La cadena String la convierte en un array de caracteres
+               
+        for (int i = nombre.length()-1; i>=0; i--)
         {
-            
+            System.out.print("" + invertir[i]);
         }
+        
+            System.out.println("\n" + nombre);
     }
 }
