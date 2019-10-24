@@ -1,0 +1,3 @@
+Constructor por defecto
+
+	-Es un constructor que no recibe parametros
