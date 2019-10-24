@@ -181,3 +181,28 @@ class clase_empleado
     
     
 
+class jefatura extends clase_empleado
+{
+    public jefatura(String nom, double sue, int agno, int mes, int dia)
+    {
+        super(nom, sue, agno, mes, dia);
+    }
+
+    public void estableceIncentivo(double b)//GETTER
+    {
+        incentivo = b;
+    }
+    
+    
+    //Con este método anulamos el metodo Dame Sueldo de la claseEmpleado, esto para evitar conflictos
+    //Se sobrescrive el dameSueldo de clase_empleado
+    public double dameSueldo()
+    {
+        double sueldoJefe = super.dameSueldo();//Llamamos al metodo de la calse padre, no llamara al metodo
+                                                //de jefatura si no a l de clase_empleado
+        return sueldoJefe + incentivo;
+    }
+    private double incentivo;
+
+
+}
