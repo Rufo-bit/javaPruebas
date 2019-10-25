@@ -1,0 +1,12 @@
+Polimorfismo
+
+	-Principio de sustitución: Se puede utilizar un objeto 
+de la subclase siempre que el programa espere un objeto de la superclase
+
+	-O lo que es lo mismo: Un objeto se puede comportar de diferente forma 
+dependiendo del contexto. Las variables objeto son poliformicas.
+
+
+Enlazado Dinámico
+	-Es que la máquina virtual de Java de saber a que método de clase mandara
+		a llamar

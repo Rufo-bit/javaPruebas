@@ -93,12 +93,18 @@ public class empleado
 {
     public static void main(String[] args)
     {
-        clase_empleado[] misEmpleados = new clase_empleado[4];
+        jefatura jefe_RRHH= new jefatura("Jorge Alvarado", 200000, 2019, 11, 2);
+        jefe_RRHH.estableceIncentivo(50);
+        
+        
+        clase_empleado[] misEmpleados = new clase_empleado[6];
         
         misEmpleados[0] = new clase_empleado("Antonio Muñoz", 85000, 2005, 12, 3);
         misEmpleados[1] = new clase_empleado("Fabian Muñoz", 95000, 2009, 6, 2);
         misEmpleados[2] = new clase_empleado("Victor Muñoz", 100000, 20015, 11, 5);
         misEmpleados[3] = new clase_empleado(" José Antonio"); //Llamara al segundo contructor por tener un argumento
+        misEmpleados[4]= jefe_RRHH; //principio de sustitución, esto es un claro de polimorfismo
+        misEmpleados[5]= new jefatura("María", 9500, 1999,5,25);
         
         /*for(int i=0; i<3; i++)
         {
@@ -111,10 +117,11 @@ public class empleado
         }
         
         
-        for (int i=0;i<4;i++)
+        for (int i=0;i<6;i++)
         {
             System.out.println("Nombre: " + misEmpleados[i].dameNombre() + " Sueldo: " + 
-                    misEmpleados[i].dameSueldo() + " Fecha alta: " + misEmpleados[i].dameAlta());
+                    misEmpleados[i].dameSueldo()/*Aquí vemos que la clase toma el metodo dependiendo si es empleado o jefatura*/
+                    + " Fecha alta: " + misEmpleados[i].dameAlta());
         }
     }
 }
@@ -203,6 +210,6 @@ class jefatura extends clase_empleado
         return sueldoJefe + incentivo;
     }
     private double incentivo;
-
-
+    
+  
 }
