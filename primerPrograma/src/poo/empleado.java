@@ -106,6 +106,11 @@ public class empleado
         misEmpleados[4]= jefe_RRHH; //principio de sustitución, esto es un claro de polimorfismo
         misEmpleados[5]= new jefatura("María", 9500, 1999,5,25);
         
+        //refundicion o casting de objeto empleado a objeto jefatura
+        jefatura jefaFinanzas = (jefatura) misEmpleados[5];
+        jefaFinanzas.estableceIncentivo(5000);
+        
+        
         /*for(int i=0; i<3; i++)
         {
             misEmpleados[i].subeSueldo(5);
@@ -163,7 +168,8 @@ class clase_empleado
         return nombre;
     }
     
-    public double dameSueldo()//getter
+    public /*final*/double dameSueldo()//getter  //Si se le pone final, ningun otra clase puede utilizar
+                                                    //el método
     {
         return sueldo;
     }
@@ -188,7 +194,7 @@ class clase_empleado
     
     
 
-class jefatura extends clase_empleado
+/*final*/ class jefatura extends clase_empleado //Con este final evita que se sigan heredando otras clases
 {
     public jefatura(String nom, double sue, int agno, int mes, int dia)
     {
@@ -213,3 +219,4 @@ class jefatura extends clase_empleado
     
   
 }
+
