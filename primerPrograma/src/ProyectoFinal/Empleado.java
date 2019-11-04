@@ -21,7 +21,7 @@ class Empleado
     private float horas_laboradas;
     private Date alta_contrato;
     
-    public Empleado(String nom, int edad, char RFC, double sueldo_base, int dias_laborados, char turno, float horas_laboradas, Date alta_contrato )
+    public Empleado(String nom, int edad, char RFC, double sueldo_base, int dias_laborados, char turno, float horas_laboradas, int agno, int mes, int dia )
     {
      nombre = nom;
      this.edad = edad;
@@ -32,6 +32,12 @@ class Empleado
      this.horas_laboradas = horas_laboradas;
      this.alta_contrato = alta_contrato;
      
+     GregorianCalendar calendario = new GregorianCalendar(agno, mes-1, dia);
+     
+     alta_contrato = calendario.getTime();
+     
+     
+     
     }
     
     //GETTER Y SETTER
@@ -40,16 +46,18 @@ class Empleado
     //Las horas de trabajo seran 7 horas por dias
     //Si trabajan un día extra se pagara 1200
     
+    //SETTERS
     
     public void Setnombre (String escribe_nombre)
     {
         this.nombre = escribe_nombre;
     }
     
-    public void
+    public void SetEdad (int escribe_edad)
             {
-                
+                this.edad = escribe_edad;
             }
+    
             
             
     public void SetSueldoBase (int escribe_sueldo)
@@ -57,6 +65,23 @@ class Empleado
         this.sueldo_base = escribe_sueldo;
     }
     
+    
+    public void SetDias_laborados (int escribe_dias)
+    {
+    	this.dias_laborados = escribe_dias;
+    }
+    
+    public void SetHoras_laboradas (int escribe_horas)
+    {
+    	horas_laboradas = escribe_horas;
+    }
+    
+    
+    //GETTERS
+    public Date GetDameAlta()
+    {
+    	return alta_contrato;
+    }
     
 }
 
