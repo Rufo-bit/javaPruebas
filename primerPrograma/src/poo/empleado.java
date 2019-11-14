@@ -133,7 +133,7 @@ public class empleado
     //clase
 class clase_empleado
 {
-    //método contructor que recibira argumentos
+    //método contructor qffue recibira argumentos
     public clase_empleado(String nom, double sue, int agno, int mes, int dia) //un constructor no lleva void y no devuelve datos
             {
                 nombre = nom;
