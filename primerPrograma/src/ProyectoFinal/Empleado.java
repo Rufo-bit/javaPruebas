@@ -46,25 +46,47 @@ class Empleado
     //Las horas de trabajo seran 7 horas por dias
     //Si trabajan un día extra se pagara 1200
     
-    //SETTERS
+    //SETTER
     
     public void Setnombre (String escribe_nombre)
     {
-        this.nombre = escribe_nombre;
+        nombre = escribe_nombre;
     }
     
+    //GETTER
+    public String Getnombre ()
+    {
+        return "El nombre del empleado es: " + nombre;
+    }
+    
+    
+    //SETTER
     public void SetEdad (int escribe_edad)
             {
-<<<<<<< HEAD
-                
-                
-=======
-                this.edad = escribe_edad;
->>>>>>> 03b0f5e25a10f129712573c441f4127db4099ec9
+       edad = escribe_edad;
+
+            }
+    //GETTER
+    public String GetEdad()
+            {
+                return "La edad de: " + edad;
             }
     
+    //rfc
+    //setter
+    public void SetRFC (char escribe_rfc)
+    {
+        RFC = escribe_rfc;
+    }
             
-            
+    //getterr
+    
+    public String getRFC()
+    {
+        return "RFC : " + RFC;
+    }
+    
+    //setter        
     public void SetSueldoBase (int escribe_sueldo)
     {
         this.sueldo_base = escribe_sueldo;

@@ -23,7 +23,7 @@ public class nomina
     int numEm;
     
     numEm = Integer.parseInt(JOptionPane.showInputDialog("Cuantos empleados ingresaras: "));
-    clase_empleado[] empleadosLibreria = new clase_empleado [numEm];
+    empleado[] empleadosLibreria = new empleado [numEm];
    
     
     for (int i = 0; i<numEm; i++)
@@ -38,7 +38,7 @@ public class nomina
         dia=Integer.parseInt(JOptionPane.showInputDialog("Ingresa día de alta"));
         
         
-        empleadosLibreria[i] = new clase_empleado(nombre, edad, sueldo, agno, mes, dia); 
+        empleadosLibreria[i] = new empleado(nombre, edad, sueldo, agno, mes, dia); 
         
         /*for(int j = 0; j<3; i++)
         {

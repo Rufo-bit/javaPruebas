@@ -3,14 +3,14 @@ package pooEjercicio;
 
 import java.util.*;
 
-        class clase_empleado
+        class empleado
         {
             private String nombre;
             private double sueldo;
             private Date altaContrato;
             private int edad;
             
-            public clase_empleado( String nom, int eda, double sue, int agno, int mes, int dia)
+            public empleado( String nom, int eda, double sue, int agno, int mes, int dia)
             {
               nombre = nom;
               edad=eda;
