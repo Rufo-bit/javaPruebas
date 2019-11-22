@@ -25,24 +25,25 @@ public class ejercicioPuntou
         for(int j = 0; j<Entrada; j++)
         {
                 Array[j] = Integer.parseInt(JOptionPane.showInputDialog("Introduce los numeros del array: " + j  ));               
+                 System.out.println("indice" + j + "=" + Array[j]); 
+        }
         
-                int numero = j;
-            
-            for(int i = 0; i<Entrada; i++)
-                {
-                    int indice = i;
-            int resultado = numero %indice;
-                    if(resultado==0)
+           for(int i = 1; i<Entrada; i++)
+               {
+                   
+                   
+                   
+                    if(Array[i]%i==0 || i==Array[i])
                     {
-                        System.out.println(indice);
+                        System.out.println(Array[i] + "     Es multiplo de su indice");
                     }
 
                     else
-                    {
+                    
                         System.out.println();
-                    }
+                    
                 }
-        }
+        
         
         
         

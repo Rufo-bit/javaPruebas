@@ -84,7 +84,7 @@ public class ejercicioDos
          
          for(int descendente : array)
         {
-            System.out.println("array Uno numero: " + descendente);
+            System.out.println("array Uno INVERTIDO numero: " + descendente);
         }
          
     }
