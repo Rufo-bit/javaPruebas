@@ -21,31 +21,41 @@ public class ejercicioPuntod
         
         char Array[] = Entrada.toCharArray();
         
-        for(int j = 0; j < Array.length; j++)
+        //for(int j = 0; j < Array.length; j++)
         {
-         for (int i = Entrada.length()-1; i>=0; i--)
-        {
-            int min = i;
+         //for (int i = Entrada.length()-1; i>=0; i--)
+        //{
+            
+            for (int i = 0; i<=Entrada.length()-1;i++)
+            {
+                
+                
+                
+                
+            }
+            
+            /*int min = i;
  
-            //buscamos el menor número
+           //buscamos el menor número
             for (int k = i + 1 ; k < Array.length ; k++) {
                 if (Array[k] < Array[min]) {
                     min = k;    //encontramos el menor número
                 }
             }
  
-            if (i != min) {
+            if (i != min) 
+            {
                 //permutamos los valores
                 char aux = Array[i];
                 Array[i] = Array[min];
-                Array[min] = char aux;
+                Array[min] = char aux;*/
             
-            System.out.print("" + Array[i]);
+            System.out.print("   " + Array[i]);
             
             
-        }
+        //}
             System.out.println("\n" );
-        }
+        }   
            
     }
     
