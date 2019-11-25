@@ -20,43 +20,42 @@ public class ejercicioPuntod
         Entrada = entrada.nextLine();
         
         char Array[] = Entrada.toCharArray();
-        
-        //for(int j = 0; j < Array.length; j++)
-        {
-         //for (int i = Entrada.length()-1; i>=0; i--)
-        //{
-            
+     
+ 
             for (int i = 0; i<=Entrada.length()-1;i++)
-            {
-                
-                
-                
-                
-            }
-            
-            /*int min = i;
- 
-           //buscamos el menor número
-            for (int k = i + 1 ; k < Array.length ; k++) {
-                if (Array[k] < Array[min]) {
-                    min = k;    //encontramos el menor número
-                }
-            }
- 
-            if (i != min) 
-            {
-                //permutamos los valores
-                char aux = Array[i];
-                Array[i] = Array[min];
-                Array[min] = char aux;*/
-            
+            {       
+
             System.out.print("   " + Array[i]);
-            
-            
-        //}
+               
+            }
             System.out.println("\n" );
-        }   
+           
            
     }
     
 }
+
+/*
+
+public class Main {
+
+    public static void main(String[] args) {
+        String[] elementos = "a,b,c".split(",");
+        int n = elementos.length;                  //Tipos para escoger
+        int r = elementos.length;   //Elementos elegidos
+        Perm2(elementos, "", n, r);
+    }
+
+    private static void Perm2(String[] elem, String act, int n, int r) {
+        if (n == 0) {
+            System.out.println(act);
+        } else {
+            for (int i = 0; i < r; i++) {
+                if (!act.contains(elem[i])) { // Controla que no haya repeticiones
+                    Perm2(elem, act + elem[i] + ",    ", n - 1, r);
+                }
+            }
+        }
+    }
+
+*/
