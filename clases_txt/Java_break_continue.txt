@@ -1,0 +1,19 @@
+Java Break
+
+Lo que hace el break es romper la continuidad del ciclo, hasta que la
+condición se cumpla donde esta el break
+
+for (int i = 0; i < 10; i++) {
+  if (i == 4) {
+    break;
+  }
+  System.out.println(i);
+}
+
+En este caso solo se visualizaria en pantalla 0,1,2,3. Después de esa intrucción el ciclo truena.
+
+
+La sentencia break hace que se salga del bucle inmediatamente por lo que no se ejecutara ni el código que se encuentre después del break en esa misma iteración ni ninguna de las posibles iteraciones restantes.
+
+--------------------------------------------------------------------
+Java continue

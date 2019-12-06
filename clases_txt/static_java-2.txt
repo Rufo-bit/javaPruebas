@@ -5,3 +5,23 @@ Métodos STATIC
 -Para llamarlas es nombreDeClase.metodo
 
 -No acceden a campos de ejemplar(variables/constantes declaradas en clase), a menos que estas tambien sean static
+
+-Un método estático se puede acceder directamente por el nombre de la clase y no necesita ningún objeto
+
+-Un método estático no puede hacer referencia a “este” o “super” palabras clave de todos modos
+
+
+
+clase pública Demo {
+    static int a;
+    static int b;
+   
+ static {   
+        a = 10;   
+        b = 20;
+    }
+    public static void main(String args[]) {  
+        System.out.println("Valor de a =" + a); 
+        System.out.println("Valor de b =" + b);        
+    }
+}
