@@ -1,0 +1,77 @@
+STATIC VS PUBLIC
+-----------------------------------------------------
+
+STATIC
+-En el static se puede acceder sin crear un objeto de la clase
+-----------------------
+
+PUBLIC
+-Solo pueden acceder los objetos
+-----------------------
+
+VOID
+-
+
+-------------------------------------------------------
+
+EJEMPLO
+
+
+
+public MyClass {
+
+  // Método STATIC
+  static void myStaticMethod() {
+    System.out.println("Static methods can be called without creating objects");
+  }
+
+  // Método Público
+  public void myPublicMethod() {
+    System.out.println("Public methods must be called by creating objects");
+  }
+
+  // Main method
+  public static void main(String[] args) {
+
+    myStaticMethod(); // Call the static method
+    // myPublicMethod(); This would compile an error
+
+    MyClass myObj = new MyClass(); // Create an object of MyClass
+    myObj.myPublicMethod(); // Call the public method on the object
+  }
+}
+----------------------------------------------------
+
+Ejercicio
+
+Crea un objeto Car llamado myCar. Llame a los métodos fullThrottle()y speed()en el myCarobjeto y ejecute el programa:
+
+
+
+public class Car
+{
+
+	public void fullThrottle()
+		{
+			System.out.println("Tu carro es muy veloz");
+		}
+	public void speed (int maxVel)
+		{
+			System.out.println("La velocidad de tu carro es: " + maxVel)	
+		}
+	
+
+	
+
+	public static void main(String[] args)
+		{
+			Car myCar = new Car();
+			
+			myCar.fullThrottle();
+			
+			myCar.speed(200);  
+
+		}
+	
+
+}
