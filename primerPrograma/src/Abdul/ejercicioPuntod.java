@@ -30,7 +30,10 @@ public class ejercicioPuntod
             }
             System.out.println("\n" );
            
-           
+           for(int i = Entrada.length(); i<=0;i--)
+           {
+               
+           }
     }
     
 }

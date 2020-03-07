@@ -1,0 +1,5 @@
+Tenemos una librería que vendera todo tipo de libros, el cliente puede tener una tarjeta de descuento por ser afiliado.
+
+La librería tiene empleados que solamente tienen un cargo y puede ser cajero, limpieza o ventas. 
+
+Para ser mejor identificados los libros tendran los siguientes datos: Autor, Coautor(opcional), Editorial, Fecha de publicación.
